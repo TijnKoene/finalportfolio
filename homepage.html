@@ -1,58 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header>
-    <nav class="navbar">
-        <div class="logo">MyPortfolio</div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
 
-<section id="about" class="about-section">
-    <div class="about-content">
-        <div class="about-text">
-            <h1>About Me</h1>
-            <p>Hello, I'm Tijn Koene, a 19-year-old student currently in my second year of software development at Sint Lucas. I live in Breda
-                a city in the Netherlands and my study is in Eindhoven. I love the sport rugby,
-                where I've learned the values of teamwork and perseverance.
+<!-- Sections -->
+<section id="top" class="section">
+    <h1>Welcome</h1>
+    <p>This is the top of the page. Scroll down or use the navigation.</p>
+</section>
 
-                When the weekend arrives, you'll often find me with my friends, going out in Eindhoven as well as in Breda
-                and creating memories together. I love the excitement of parties and the joy of socializing with friends.
-
-                Beyond the world of social gatherings, I'm deeply passionate about two things: game design and web development.
-                Crafting game worlds that fascinate players, user-friendly websites are my creative outlets. I'm always seeking new
-                challenges and opportunities to expand my skills in these areas.
-
-                Thank you for taking the time to get to know me. Feel free to reach out if you'd like to connect or collaborate on exciting projects.</p>
-        </div>
-        <div class="about-image">
-            <img src="images/Profile.png" alt="Profile Picture" />
-        </div>
+<section id="about" class="section">
+    <h1>About Me</h1>
+    <div class="about-container">
+        <p>This section introduces who I am and what I do.</p>
+        <img src="images/Profile.png" alt="Profile Picture" class="profile-pic" />
     </div>
 </section>
 
-<section id="projects">
-    <h1>Projects</h1>
-    <p>Here are some of the projects I've worked on.</p>
+<section id="solutions" class="section">
+    <h1>Solutions</h1>
+    <p>Here are some of the ways I solve problems and build projects.</p>
 </section>
 
-<section id="contact">
-    <h1>Contact</h1>
-    <p>Feel free to reach out!</p>
+<section id="simulator" class="section">
+    <h1>Simulator</h1>
+    <p>Try out an interactive simulator or demonstration here.</p>
 </section>
+
+<section id="member" class="section">
+    <h1>Member Area</h1>
+    <p>Exclusive content or member-only features go here.</p>
+</section>
+
+<!-- Right Vertical Navigation -->
+<div class="vertical-nav">
+    <div class="nav-line"></div>
+    <div class="nav-indicator" id="nav-indicator"></div>
+    <ul class="nav-list">
+        <li><a href="#top">Top</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#solutions">Solutions</a></li>
+        <li><a href="#simulator">Simulator</a></li>
+        <li><a href="#member">Member</a></li>
+    </ul>
+</div>
 
 <script src="script.js"></script>
 </body>

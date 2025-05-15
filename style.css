@@ -1,79 +1,85 @@
-
+/* Base styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: "Libre Franklin", sans-serif;
-    line-height: 1.6;
-    color: #333;
-}
-
-header {
-    background: #111;
-    padding: 1rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.navbar {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    font-family: sans-serif;
     color: white;
+    background-color: #111;
+    overflow-x: hidden;
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #00bcd4;
-}
-
-section {
-    padding: 4rem 1rem;
+.section {
+    min-height: 100vh;
+    padding: 100px 20px;
     max-width: 800px;
     margin: auto;
 }
-.about-section {
+
+/* About Section */
+.about-container {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
     gap: 2rem;
     flex-wrap: wrap;
 }
 
-.about-content {
+.profile-pic {
+    width: 180px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Vertical Nav */
+.vertical-nav {
+    position: fixed;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
     align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
+    z-index: 1000;
 }
 
-.about-text {
-    flex: 1;
-    min-width: 250px;
+.nav-line {
+    width: 2px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.3);
+    position: relative;
 }
 
-.about-image img {
-    width: 200px;
-    height: auto;
-    border-radius: 4%;
-    object-fit: cover;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.nav-indicator {
+    width: 12px;
+    height: 12px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background: #111;
+    position: absolute;
+    left: -5px;
+    transition: top 0.3s ease;
+}
+
+.nav-list {
+    list-style: none;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.nav-list a.active,
+.nav-list a:hover {
+    color: white;
 }
