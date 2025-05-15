@@ -34,9 +34,7 @@ Should have:
 Could have:
 * Popups with more info about projects
 Wireframe
-![img.png](img.png)
-![img_1.png](img_1.png)
-![img_2.png](img_2.png)
+![img.png](images%2Fimg.png)![img_1.png](images%2Fimg_1.png)![img_2.png](images%2Fimg_2.png)
 # TDD
 To achieve these things, I will use HTML, CSS and JavaScript (GSAP library).
 
