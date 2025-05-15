@@ -18,8 +18,25 @@ Small things I’m going to add:
 * Phone numbers
 * Skills
 
+Must have:
+* NavBar 
+* One pager website
+* photos of me 
+* Projects 
+* hobby's
 
+Should have:
+* animated background
+* Use of GSAP 
+* Tiles with the projects 
+* Hover effects
 
+Could have:
+* Popups with more info about projects
+Wireframe
+![img.png](img.png)
+![img_1.png](img_1.png)
+![img_2.png](img_2.png)
 # TDD
 To achieve these things, I will use HTML, CSS and JavaScript (GSAP library).
 
