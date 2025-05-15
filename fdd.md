@@ -23,6 +23,8 @@ Small things I’m going to add:
 # TDD
 To achieve these things, I will use HTML, CSS and JavaScript (GSAP library).
 
+So I will install the GSAP library, so I can use it 
+
 To challenge myself I’m going to use gsap because I’ve never used it before, and I want to learn it. I’m going to be working in Webstorm.
 
 I want there to be a navigation bar, and I’m going to make it so when you click on a topic it scrolls down to that part.
