@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-<!-- Sections -->
+<!--Header-->
 <section id="top" class="section top-section">
     <div class="top-content">
         <div class="top-text">
@@ -18,43 +20,127 @@
         <div class="top-image">
             <img src="images/snowboard.png" alt="Snowboarding" />
         </div>
+        <img class="scroll_icon" src="images/scroll_icon.png"/>
     </div>
 </section>
 
-
+<!--About me-->
 <section id="about" class="section">
-    <h1>About Me</h1>
+    <h1 class="about-title">About Me</h1>
     <div class="about-container">
-        <p>This section introduces who I am and what I do.</p>
-        <img src="images/Profile.png" alt="Profile Picture" class="profile-pic" />
+        <div class="about-text">
+            <p>Hello, I'm Tijn Koene, a 19-year-old student currently in my third year of software development at Sint Lucas. I live in Breda
+                a city in the Netherlands and my study is in Eindhoven. I love the sport rugby,
+                where I've learned the values of teamwork and perseverance.
+
+                When the weekend arrives, you'll often find me with my friends, going out in Eindhoven as well as in Breda.
+                I love the excitement of parties and the joy of socializing with friends.
+
+                Beyond social gatherings, I'm deeply passionate about two things: web development and entrepreneurship.
+                Making user-friendly websites are my creative outlets and my dream is to work for myself. I'm always seeking new
+                challenges and opportunities to expand my skills in these areas.
+
+                Thank you for taking the time to get to know me. Feel free to reach out if you'd like to connect or collaborate on exciting projects.</p>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="images/Profile.png" class="carousel-image active" alt="Profile 1">
+                <img src="images/snowboard.png" class="carousel-image" alt="Profile 2">
+                <!-- Add more <img> as needed -->
+            </div>
+            <div class="carousel-buttons">
+                <button id="prev">&#10094;</button>
+                <button id="next">&#10095;</button>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!--Projects-->
+<section id="projects" class="section">
+    <h1>Projects</h1>
+    <p>Here are some of my projects.</p>
+
+    <div class="projects-grid">
+        <div class="project row-normal">
+            <div class="project-text">
+                <h2>Project 1</h2>
+                <p>Lorem ipsum dolor sit amet. Et labore deserunt qui veritatis obcaecati ea delectus facilis aut explicabo iste At optio vitae 33 rerum debitis est tempora corporis. Est rerum voluptas in nisi blanditiis et ipsum dolor id nulla consequuntur.</p>
+            </div>
+            <div class="project-image"></div>
+        </div>
+
+        <div class="project row-reverse">
+            <div class="project-image"></div>
+            <div class="project-text">
+                <h2>Project 2</h2>
+                <p>Lorem ipsum dolor sit amet. Et labore deserunt qui veritatis obcaecati ea delectus facilis aut explicabo iste At optio vitae 33 rerum debitis est tempora corporis. Est rerum voluptas in nisi blanditiis et ipsum dolor id nulla consequuntur.</p>
+            </div>
+        </div>
+
+        <div class="project row-normal">
+            <div class="project-text">
+                <h2>Project 3</h2>
+                <p>Lorem ipsum dolor sit amet. Et labore deserunt qui veritatis obcaecati ea delectus facilis aut explicabo iste At optio vitae 33 rerum debitis est tempora corporis. Est rerum voluptas in nisi blanditiis et ipsum dolor id nulla consequuntur.</p>
+            </div>
+            <div class="project-image"></div>
+        </div>
     </div>
 </section>
 
-<section id="solutions" class="section">
-    <h1>Solutions</h1>
-    <p>Here are some of the ways I solve problems and build projects.</p>
+<!--Skills-->
+<section id="skills" class="section">
+    <h1>Skills</h1>
+    <p>These are some of my skills.</p>
+
+    <div class="skills-container">
+        <div class="skill">
+            <span>HTML</span>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 70%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <span>CSS</span>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 65%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <span>JavaScript</span>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 30%;"></div>
+            </div>
+        </div>
+    </div>
 </section>
 
-<section id="simulator" class="section">
-    <h1>Simulator</h1>
-    <p>Try out an interactive simulator or demonstration here.</p>
+<!--ContactPage-->
+<section id="contact" class="section">
+    <h1>Contact</h1>
+    <p>Contact information</p>
+
+    <div class="contact-info">
+        <p>Email: <a href="mailto:tijnkoene1@gmail.com">tijnkoene1@gmail.com</a></p>
+        <p>Phone: <a href="tel:+0615176454">+0615176454</a></p>
+    </div>
+
+    <p class="thank-you">If you're interested in working together, have any questions, or just want to connect, feel free to reach out—I'd love to hear from you!</p>
 </section>
 
-<section id="member" class="section">
-    <h1>Member Area</h1>
-    <p>Exclusive content or member-only features go here.</p>
-</section>
 
-<!-- Right Vertical Navigation -->
+<!--NAVBAR-->
 <div class="vertical-nav">
     <div class="nav-line"></div>
     <div class="nav-indicator" id="nav-indicator"></div>
     <ul class="nav-list">
         <li><a href="#top">Top</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#solutions">Solutions</a></li>
-        <li><a href="#simulator">Simulator</a></li>
-        <li><a href="#member">Member</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
 </div>
 

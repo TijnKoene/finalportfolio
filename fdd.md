@@ -24,7 +24,7 @@ Must have:
 * photos of me 
 * Projects 
 * hobby's
-
+ 
 Should have:
 * animated background
 * Use of GSAP 
