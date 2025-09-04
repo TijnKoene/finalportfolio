@@ -2,7 +2,7 @@
 
 ## Introduction
 
-I want to make a portfolio website so people can see the projects I’ve made.
+So previous year I was working on a portfolio I did not get very far so I will use its design an the navbar but except for 
 
 ## Functional Requirements
 * My skills should be presented and thinks I like to do in my free time like hobbies and work. 
@@ -19,7 +19,7 @@ Small things I’m going to add:
 * Skills
 
 Must have:
-* NavBar 
+* NavBar on the side
 * One pager website
 * photos of me 
 * Projects 
