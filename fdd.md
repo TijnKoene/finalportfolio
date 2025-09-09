@@ -2,7 +2,7 @@
 
 ## Introduction
 
-So previous year I was working on a portfolio I did not get very far so I will use its design an the navbar but except for 
+So previous year I was working on a portfolio I did not get very far so I will use its design and the navbar but except for that I will start fress
 
 ## Functional Requirements
 * My skills should be presented and thinks I like to do in my free time like hobbies and work. 

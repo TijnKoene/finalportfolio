@@ -195,8 +195,20 @@ body {
     align-items: center;
     gap: 2rem;
 }
+.project-image1{
+    width: 100%;
+    height: 280px;
+}
+.project-image2{
+    width: 100%;
+    height: 270px;
+}
+.project-image3{
+    width: 100%;
+    height: 280px;
+}
 
-/* Alternating layout styles */
+
 .row-reverse {
     flex-direction: row-reverse;
 }
