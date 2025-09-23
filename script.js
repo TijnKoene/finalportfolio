@@ -58,4 +58,36 @@ nextBtn.addEventListener("click", () => {
     currentIndex = (currentIndex + 1) % images.length;
     showImage(currentIndex);
 });
+// Map each button to its project HTML file
+const projectPages = {
+    popup1: "project1.html",
+    popup2: "project2.html",
+    popup3: "project3.html"
+};
 
+const popupContainer = document.getElementById("popupContainer");
+const popupFrame = document.getElementById("popupFrame");
+const closeBtn = document.querySelector(".close-btn");
+
+// Attach click events to each button
+document.querySelectorAll(".button-more-info").forEach(button => {
+    button.addEventListener("click", () => {
+        const projectPage = projectPages[button.id];
+        popupFrame.src = projectPage;
+        popupContainer.style.display = "flex";
+    });
+});
+
+// Close popup
+closeBtn.addEventListener("click", () => {
+    popupContainer.style.display = "none";
+    popupFrame.src = ""; // Clear iframe
+});
+
+// Close when clicking outside content
+window.addEventListener("click", (e) => {
+    if (e.target === popupContainer) {
+        popupContainer.style.display = "none";
+        popupFrame.src = "";
+    }
+});
