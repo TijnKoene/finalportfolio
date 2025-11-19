@@ -1,25 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cookie Consent Banner</title>
-    <!-- Google Font -->
-    <link
-            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-            rel="stylesheet"
-    />
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css" />
-</head>
-<div id="cookiePopup" class="hide">
-    <img src="cookie.png" />
-    <p>
-        Our website uses cookies to provide your browsing experience and
-        relevant information. Before continuing to use our website, you agree &
-        accept of our <a href="#">Cookie Policy & Privacy.</a>
-    </p>
-    <button id="acceptCookie">Accept</button>
-</div>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
@@ -28,7 +9,14 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+<div id="animated-bg">
+    <div id="stars" class="stars-layer"></div> <!-- kleine sterren -->
+    <div id="stars2" class="stars-layer"></div> <!-- middelgrote sterren -->
+    <div id="stars3" class="stars-layer"></div> <!-- grote sterren -->
+</div>
+
 <!--Header-->
 <section id="top" class="section top-section">
     <div class="top-content">
@@ -39,33 +27,29 @@
         <div class="top-image">
             <img src="images/snowboard.png"/>
         </div>
-        <img class="scroll_icon" src="images/scroll_icon.png"/>
     </div>
 </section>
 
+<img class="scroll_icon" src="images/scroll_icon.png"/>
+
 <!--About me-->
 <section id="about" class="section">
-    <h1 class="about-title">About Me</h1>
     <div class="about-container">
         <div class="about-text">
-            <p>Hello, I'm Tijn Koene, a 19-year-old student currently in my fourth year of software development at Sint Lucas. I live in Breda
-                a city in the Netherlands and my study is in Eindhoven. I love the sport rugby,
-                where I've learned the values of teamwork.
-
-                When the weekend arrives, you'll often find me with my friends, going out in Eindhoven as well as in Breda.
-                I love the excitement of parties and the joy of socializing with friends.
-
-                Beyond social gatherings, I'm deeply passionate about two things: web development and entrepreneurship.
-                Making user-friendly websites are my creative outlets and my dream is to work for myself. I'm always seeking new
-                challenges and opportunities to expand my skills in these areas.
-
-                Thank you for taking the time to get to know me. Feel free to reach out if you'd like to connect or collaborate on exciting projects.</p>
+            <h1 class="about-title">About Me</h1>
+            <p> Hallo, ik ben Tijn Koene, een 19-jarige student die momenteel in zijn vierde jaar van de opleiding Software Development op SintLucas zit.
+                <br><br> Ik woon in Breda, en mijn studie volg ik in Eindhoven. Ik hou van de sport rugby dit doe ik ook 3 keer in de week op de Bredase Rugby Club.
+                Dit doe ik 3 keer in de week en ik probeer ook 3 keer in de week naar de gym te gaan. In het weekend ben ik vaak met mijn vrienden te vinden,
+                we gaan graag uit in zowel Eindhoven als Breda. Ik geniet van de gezelligheid van feestjes en het samenzijn met vrienden. Voor de rest werk ik in de Horeca
+                bij Gusto di Pol in Princehage ik werk hier 2 keer in de week in de bediening.<br><br> Ik hou van met mensen samen werken in een team en veel communiceren met klanten.
+                Ik ben altijd op zoek naar nieuwe uitdagingen en kansen om mijn vaardigheden op deze gebieden verder te ontwikkelen binnen, maar ook buiten Software Development.<br><br>
+                Bedankt dat je de tijd hebt genomen om mij beter te leren kennen.
+                Voel je vrij om contact op te nemen als je wilt samenwerken aan interessante projecten of gewoon wilt connecten. </p>
         </div>
         <div class="carousel-container">
             <div class="carousel">
-                <img src="images/Profile.png" class="carousel-image active">
+                <img src="images/Profile.png" class="carousel-image active"> <!-- start afbeelding -->
                 <img src="images/snowboard.png" class="carousel-image">
-                <!-- Add more <img> as needed -->
             </div>
             <div class="carousel-buttons">
                 <button id="prev">&#10094;</button>
@@ -73,23 +57,33 @@
             </div>
         </div>
     </div>
-
 </section>
+
 <!--Projects-->
 <section id="projects" class="section">
-    <h1>Projects</h1>
-    <p>Here are some of my projects.</p>
-
+    <div class="titel-animatie"> <h1>Projecten</h1>
+        <p>Hier zijn een paar van mijn projecten</p>
+    </div>
     <div class="projects-grid">
         <div class="project row-normal">
             <div class="project-text">
-                <h2>Project 1</h2>
-                <p>Lorem ipsum dolor sit amet. Et labore deserunt qui veritatis obcaecati ea delectus facilis aut
-                    explicabo iste At optio vitae 33 rerum debitis est tempora corporis. Est rerum voluptas in nisi
-                    blanditiis et ipsum dolor id nulla consequuntur.</p>
-                <button id="btn1" class="button-more-info">More Info</button>
-
-
+                <div class="rij1">
+                    <h2>NK Risk</h2>
+                    <p>NK Risk was mijn eerste echte case tijdens mijn stage. Het is een grote website met meerdere complexe onderdelen, gebouwd met de WordPress plug-in Beaver Builder. Dit project heeft me veel geleerd over webontwikkeling en samenwerken.</p>
+                    <button class="open-modal" data-id="project1">Meer info</button>
+                </div>
+                <div class="modal_container">
+                    <div class="modal">
+                        <div class="modal_content">
+                            <div class="modal_text">
+                                <h1 id="modal-title"></h1>
+                                <p id="modal-text"></p>
+                                <button id="close">Terug</button>
+                            </div>
+                            <div class="modal_images" id="modal-images"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <img src="images/nkrisk.png" class="project-image1">
         </div>
@@ -97,84 +91,134 @@
         <div class="project row-reverse">
             <img src="images/ruitersbosch.png" class="project-image2">
             <div class="project-text">
-                <h2>Project 2</h2>
-                <p>Lorem ipsum dolor sit amet. Et labore deserunt qui veritatis obcaecati ea delectus facilis
-                    explicabo iste At optio vitae 33 rerum debitis est tempora corporis. Est rerum voluptas in nisi
-                    blanditiis et ipsum dolor id nulla consequuntur.</p>
-                <button id="btn2" class="button-more-info">More Info</button>
+                <div class="rij2">
+                    <h2>Ruitersbosch</h2>
+                    <p>Een van mijn andere projecten was de website voor restaurant Ruitersbosch. Dit project vond ik erg leuk omdat ik hier wat dieper de back-end van WordPress in kon duiken. Ik werkte met verschillende programmeertalen zoals PHP, JavaScript, HTML en CSS om de site tot leven te brengen</p>
+                    <button class="open-modal" data-id="project2">Meer info</button>
+                </div>
             </div>
-
         </div>
 
         <div class="project row-normal">
             <div class="project-text">
-                <h2>Project 3</h2>
-                <p>Lorem ipsum dolor sit amet. Et labore deserunt qui veritatis obcaecati ea delectus facilis aut
-                    explicabo iste At optio vitae 33 rerum debitis est tempora corporis. Est rerum voluptas in nisi
-                    blanditiis et ipsum dolor id nulla consequuntur.</p>
-                <button id="btn3" class="button-more-info">More Info</button>
+                <div class="rij3">
+                    <h2>Restaurant Hofdreven</h2>
+                    <p>Dit project was ook bedoeld voor een restaurant, maar is uiteindelijk niet online gekomen. Toch heb ik er enorm veel van geleerd en veel vooruitgang geboekt. Vooral in het begin merkte ik dat ik steeds beter zelfstandig kon werken en de basis steeds beter onder de knie kreeg.</p>
+                    <button class="open-modal" data-id="project3">Meer info</button>
+                </div>
             </div>
-            <img src="images/nkrisk.png" class="project-image3">
+            <img src="images/hd1.png" class="project-image3">
         </div>
     </div>
 </section>
 
 <!--Skills-->
 <section id="skills" class="section">
-    <h1>Skills</h1>
-    <p>These are some of my skills.</p>
+    <div class="skills-wrapper">
+        <h3>Mijn Skills</h3>
 
-    <div class="skills-container">
-        <div class="skill">
-            <span>HTML</span>
-            <div class="skill-bar">
-                <div class="skill-level" style="width: 70%;"></div>
-            </div>
+        <div class="skills-icons">
+            <div class="icon-circle">✨</div>
+            <div class="icon-circle">🌐</div>
+            <div class="icon-circle">🔧</div>
+            <div class="icon-circle">💻</div>
         </div>
 
-        <div class="skill">
-            <span>CSS</span>
-            <div class="skill-bar">
-                <div class="skill-level" style="width: 65%;"></div>
-            </div>
-        </div>
+        <div class="skills-grid">
+            <div>
+                <div class="skill">
+                    <div class="skill-label">
+                        <span>HTML</span><span>70%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="--target:70%;"></div>
+                    </div>
+                </div>
 
-        <div class="skill">
-            <span>JavaScript</span>
-            <div class="skill-bar">
-                <div class="skill-level" style="width: 30%;"></div>
+                <div class="skill">
+                    <div class="skill-label">
+                        <span>CSS</span><span>65%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="--target:65%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-label">
+                        <span>JavaScript</span><span>30%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="--target:30%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="skill">
+                    <div class="skill-label">
+                        <span>WordPress</span><span>50%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="--target:50%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-label">
+                        <span>GSAP</span><span>60%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="--target:60%;"></div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
+
 </section>
 
 <!--ContactPage-->
 <section id="contact" class="section">
     <h1>Contact</h1>
-    <p>Contact information</p>
+    <p>Neem contact met mij op</p>
 
     <div class="contact-info">
-        <p>Email: <a href="mailto:tijnkoene1@gmail.com">tijnkoene1@gmail.com</a></p>
-        <p>Phone: <a href="tel:+0615176454">+0615176454</a></p>
     </div>
 
-    <p class="thank-you">If you're interested in working together, have any questions, or just want to connect, feel free to reach out—I'd love to hear from you!</p>
-</section>
+    <form id="contact-form" method="POST" action="https://api.web3forms.com/submit">
+        <input type="hidden" name="access_key" value="263a8be0-b3ff-416b-85ea-b7cc11ecdeb8">
+        <input type="hidden" name="redirect" value="https://tijnkoene.github.io/finalportfolio/">
 
+        <label for="name">Naam</label>
+        <input type="text" id="name" name="name" placeholder="Je naam" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Je email" required>
+
+        <label for="message">Beschrijving</label>
+        <textarea id="message" name="message" placeholder="Typ hier je bericht" required></textarea>
+
+        <button type="submit">Verstuur</button>
+    </form>
+</section>
 
 <!--NAVBAR-->
 <div class="vertical-nav">
     <div class="nav-line"></div>
     <div class="nav-indicator" id="nav-indicator"></div>
     <ul class="nav-list">
-        <li><a href="#top">Top</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#top">Begin</a></li>
+        <li><a href="#about">Over Mij</a></li>
+        <li><a href="#projects">Projecten</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

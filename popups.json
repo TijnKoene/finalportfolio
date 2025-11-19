@@ -1,0 +1,34 @@
+[
+  {
+    "id": "project1",
+    "title": "NK Risk",
+    "text": "Tijdens mijn stage werkte ik aan de website van <b>NK Risk</b>, mijn eerste echte professionele project.<br><br>Het was een vrij grote en uitdagende website met meerdere pagina’s en wel wat lastige onderdelen. We maakten gebruik van <b>WordPress</b> in combinatie met de <b>Beaver Builder</b> plug-in om de structuur van de site op te bouwen. Dit was voor mij een hele nieuwe werkwijze, waardoor ik in het begin veel moest leren over hoe deze tools überhaupt werkte .<br><br>Na het opstellen van de strutuur, werkte ik ook met <b>HTML</b>, <b>CSS</b> en <b>JavaScript</b> om onderdelen aan te passen en de website beter op maat te maken bijvoorbeeld ook voor responsive. Zo heb ik styling toegevoegd buiten de standaard layout van de plug-in en kleine interactieve dingen gemaakt met <b>JavaScript</b> en <b>CSS</b>.<br><br>Ik kreeg tijdens dit project veel begeleiding van mijn stagebegeleider, vooral in de beginfase omdat ik natuurlijk helemaal nieuw was met hun werkwijze en programma's. Samen hebben we gekeken naar de juiste structuur van de website, de opbouw van de pagina’s en de technische optimalisatie. Na een tijdje kon ik steeds zelfstandiger werken en begon ik de logica achter WordPress en Beaver Builder echt te begrijpen.<br>Het gaf me een goed beeld van hoe een professionele website van start tot oplevering wordt opgebouwd.<br><br><a href='https://nkrisk.nl/' target='_blank'>Bekijk de website</a>",
+
+
+    "images": [
+      "images/nkrisk.png",
+      "images/nkrisk1.png"
+    ]
+  },
+  {
+    "id": "project2",
+    "title": "Restaurant Ruitersbosch",
+    "text": "Voor het restaurant Ruitersbosch heb ik een complete website ontwikkeld waarin gebruiksvriendelijkheid en stijl centraal staan.<br><br> Tijdens dit project heb ik me verdiept in de back-end van WordPress, waardoor ik meer inzicht kreeg in hoe dynamische content en thema’s technisch zijn opgebouwd. Een groot deel van mijn werk bestond uit het realiseren van de menukaart, die ik met eigen PHP- en JavaScript-code heb opgebouwd zodat het restaurant deze gemakkelijk kan aanpassen. <br><br>Daarnaast heb ik de website verrijkt met subtiele ease-in en ease-out animaties om de gebruikerservaring soepeler en moderner te maken.Een andere interessante uitdaging was het ontwikkelen van een reserverings-popup, waarmee bezoekers direct via de website een tafel kunnen boeken. <br><br>Dit vergde zowel front-end als back-end kennis om alles functioneel en visueel aantrekkelijk te integreren. Door dit project heb ik mijn vaardigheden in HTML, CSS, JavaScript en PHP verder kunnen leren hoe ik design en code beter kan combineren.<br><br><a href='https://restaurantruitersbosch.nl/' target='_blank'>Bekijk de website</a>",
+
+    "images": [
+      "images/ruitersbosch1.png",
+      "images/ruitersbosch2.png"
+    ]
+  },
+  {
+    "id": "project3",
+    "title": "Restaurant Hofdreven",
+    "text": "Tijdens dit restaurantproject heb ik vooral veel geleerd over mijn eigen manier van werken en mijn groei . Hoewel de website uiteindelijk niet online is gezet, heb ik hier veel geleerd over niet te veel vragen stellen ik gaf het soms te snel op terwijl ik het nog niet goed zelf had geprobeerd.<br><br>In de beginfase merkte ik dat ik steeds zelfstandiger kon werken — taken die ik eerst lastig vond, gingen me steeds beter af. Dit gaf me veel vertrouwen, maar toen het einde kwam liep ik ineens tegen heel veel dingen aan die met de menu kaart te maken hadden waardoor ik dat kwijtraakte en te snel om hulp vroeg. De echte uitdaging kwam toen ik aan de menukaartfunctionaliteit begon te werken. Hiervoor was PHP nodig. <br><br>Dat confronteerde me met de onderdelen waar ik nog groei in kon maken, maar juist daardoor heb ik een beter beeld gekregen van mijn sterke en zwakkere punten. Dit project heeft me geleerd om door te zetten, om hulp te durven vragen alleen wanneer dat nodig is, en om kritisch te blijven kijken naar mijn eigen code. Ondanks dat het project nooit live is gegaan, zie ik het als een belangrijk leerpunt in mijn ontwikkeling als webdeveloper.",
+
+    "images": [
+      "images/hd2.png",
+      "images/hd3.png",
+      "images/hd4.png"
+    ]
+  }
+]
